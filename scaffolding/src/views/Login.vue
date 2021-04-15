@@ -52,7 +52,7 @@ export default {
             let url='/login'
             let param=`username=${this.username}&password=${this.upwd}`;
             this.axios.post(url,param).then(res=>{
-                console.log(res);
+                // console.log(res);
                 if(res.data.code==200){//登录成功
                     this.$toast({
                         message:"登录成功",
