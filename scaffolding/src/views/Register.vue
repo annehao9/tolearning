@@ -63,7 +63,7 @@ export default {
            if(this.checkUsername()&&this.checkUpwd()&&this.checkReupwd()){
             //    发送注册请求，实现注册业务
             let url='/register'
-            let param=`username=${this.username}&password=${this.password}`;
+            let param=`username=${this.username}&password=${this.upwd}`;
             this.axios.post(url,param).then(res=>{
                 console.log(res);
                 if(res.data.code==200){//注册成功

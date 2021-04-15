@@ -6,7 +6,7 @@
           <router-link to="/login" slot="right">登录</router-link>
         </div>
         <div v-else slot="right">
-          欢迎：
+          欢迎：{{this.$store.state.user.username}}
         </div>
     </mt-header>
     <!-- 导航 -->
